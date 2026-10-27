@@ -1,0 +1,666 @@
+{
+ "venues": [
+  {
+   "IsArchived": 0,
+   "VenueId": 1,
+   "SportId": 1,
+   "Name": "Dvorana",
+   "Description": "Paviljon 6",
+   "SportActive": 1,
+   "SportArchived": 0,
+   "SportUrlName": "Tennis",
+   "SportName": "Tenis"
+  },
+  {
+   "IsArchived": 0,
+   "VenueId": 3,
+   "SportId": 2,
+   "Name": "Dvorana",
+   "Description": "badminton",
+   "SportActive": 1,
+   "SportArchived": 0,
+   "SportUrlName": "Badminton",
+   "SportName": "Badminton"
+  }
+ ],
+ "settings": {
+  "ReservationsEnabled": true,
+  "ReservationLeadTime": 0,
+  "FutureReservationLimit": 7,
+  "MaxReservationDuration": 2,
+  "CancellationWindow": 180,
+  "MaxReservationsPerUser": 10,
+  "Configuration": {
+   "SlotFormat": 1
+  },
+  "SlotSize": 1
+ },
+ "day": {
+  "IsArchived": 0,
+  "VenueId": 1,
+  "SportId": 1,
+  "Name": "Dvorana",
+  "Description": "Paviljon 6",
+  "SportActive": 1,
+  "SportArchived": 0,
+  "SportUrlName": "Tennis",
+  "SportName": "Tenis",
+  "Hours": {
+   "VenueId": 1,
+   "Date": "2026-10-27",
+   "DayInWeek": "Tuesday",
+   "StartTime": 7,
+   "EndTime": 23,
+   "Closed": false
+  },
+  "DisableReservationBeforeTime": 0.5,
+  "Terrains": [
+   {
+    "TerrainId": 1,
+    "Name": "Teren 1",
+    "Reservations": [
+     {
+      "ReservationId": 43783,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 19,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 44033,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 10,
+      "EndTime": 12,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45298,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 19,
+      "EndTime": 20,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45311,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 20,
+      "EndTime": 21,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45324,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 21,
+      "EndTime": 22,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 46200,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 15,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47143,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 22,
+      "EndTime": 23,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47409,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 8,
+      "EndTime": 9,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47588,
+      "TerrainId": 1,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 9,
+      "EndTime": 10,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   },
+   {
+    "TerrainId": 2,
+    "Name": "Teren 2",
+    "Reservations": [
+     {
+      "ReservationId": 44060,
+      "TerrainId": 2,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 10,
+      "EndTime": 11,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45272,
+      "TerrainId": 2,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 19,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45285,
+      "TerrainId": 2,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 19,
+      "EndTime": 22,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 46201,
+      "TerrainId": 2,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 15,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47144,
+      "TerrainId": 2,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 22,
+      "EndTime": 23,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47519,
+      "TerrainId": 2,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 8,
+      "EndTime": 10,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47579,
+      "TerrainId": 2,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 13,
+      "EndTime": 14,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   },
+   {
+    "TerrainId": 3,
+    "Name": "Teren 3",
+    "Reservations": [
+     {
+      "ReservationId": 45337,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 21,
+      "EndTime": 22,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45350,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 20,
+      "EndTime": 21,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45579,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 16,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45674,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 20,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47145,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 22,
+      "EndTime": 23,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47301,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 9,
+      "EndTime": 11,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47458,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 11,
+      "EndTime": 13,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47646,
+      "TerrainId": 3,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 15,
+      "EndTime": 16,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   },
+   {
+    "TerrainId": 4,
+    "Name": "Teren 4",
+    "Reservations": [
+     {
+      "ReservationId": 43527,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 19,
+      "EndTime": 22,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 44153,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 15,
+      "EndTime": 17,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45058,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 17,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45807,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 8,
+      "EndTime": 10,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45846,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 10,
+      "EndTime": 13,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 46824,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 13,
+      "EndTime": 15,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47339,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 22,
+      "EndTime": 23,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47641,
+      "TerrainId": 4,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 19,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   },
+   {
+    "TerrainId": 5,
+    "Name": "Teren 5",
+    "Reservations": [
+     {
+      "ReservationId": 43043,
+      "TerrainId": 5,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 21,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 43678,
+      "TerrainId": 5,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 21,
+      "EndTime": 22,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45259,
+      "TerrainId": 5,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 17,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45820,
+      "TerrainId": 5,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 8,
+      "EndTime": 10,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 45833,
+      "TerrainId": 5,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 10,
+      "EndTime": 14,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47320,
+      "TerrainId": 5,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 15,
+      "EndTime": 17,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   },
+   {
+    "TerrainId": 6,
+    "Name": "Teren 6",
+    "Reservations": [
+     {
+      "ReservationId": 43042,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 21,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 43308,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 16.5,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 44855,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 15,
+      "EndTime": 16.5,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 46448,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 10,
+      "EndTime": 11,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47323,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 21,
+      "EndTime": 22,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47363,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 11,
+      "EndTime": 12,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47476,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 9,
+      "EndTime": 10,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47587,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 8,
+      "EndTime": 9,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47619,
+      "TerrainId": 6,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 22,
+      "EndTime": 23,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   },
+   {
+    "TerrainId": 7,
+    "Name": "Teren 7",
+    "Reservations": [
+     {
+      "ReservationId": 43238,
+      "TerrainId": 7,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 21,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 43307,
+      "TerrainId": 7,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 16.5,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 43470,
+      "TerrainId": 7,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 15,
+      "EndTime": 16.5,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 44793,
+      "TerrainId": 7,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 8,
+      "EndTime": 11,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47469,
+      "TerrainId": 7,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 11,
+      "EndTime": 12,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47589,
+      "TerrainId": 7,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 14,
+      "EndTime": 15,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47630,
+      "TerrainId": 7,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 21,
+      "EndTime": 23,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   },
+   {
+    "TerrainId": 8,
+    "Name": "Teren 8",
+    "Reservations": [
+     {
+      "ReservationId": 43041,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 18,
+      "EndTime": 21,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 43306,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 16.5,
+      "EndTime": 18,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 43637,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 21,
+      "EndTime": 22,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 44360,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 14.5,
+      "EndTime": 16.5,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 44754,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 8,
+      "EndTime": 11,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47593,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 22,
+      "EndTime": 23,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47632,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 12,
+      "EndTime": 14,
+      "IsCurrentUserCreator": false
+     },
+     {
+      "ReservationId": 47644,
+      "TerrainId": 8,
+      "VenueId": 1,
+      "Date": "2026-10-27",
+      "StartTime": 11,
+      "EndTime": 12,
+      "IsCurrentUserCreator": false
+     }
+    ]
+   }
+  ]
+ }
+}

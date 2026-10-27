@@ -1,0 +1,70 @@
+<div class="status-bar">
+  <span class="total"><strong>{{ total }}</strong> free block{{ '' if total == 1 else 's' }}
+    from {{ criteria.date_from.strftime('%a %d %b') }} to {{ criteria.date_to.strftime('%a %d %b') }},
+    min {{ criteria.min_minutes }} min</span>
+  <span class="providers">
+  {% for p in providers %}
+    <span class="badge badge-{{ p.status }}"
+          title="{% if p.error %}{{ p.error }}{% elif p.fetched_at %}fetched {{ p.fetched_at.strftime('%H:%M:%S') }}{% if p.elapsed_ms %} in {{ p.elapsed_ms }} ms{% endif %}{% endif %}">
+      {{ p.club.name if p.club else p.provider }}: {{ p.status }}{% if p.status != 'error' %} ({{ p.blocks }}){% endif %}
+    </span>
+  {% endfor %}
+  </span>
+  <span class="legend">
+    <span class="lg lg-free"></span> free (click to book)
+  </span>
+</div>
+
+{% for p in providers if p.status == 'error' %}
+  <div class="error">{{ p.club.name if p.club else p.provider }} failed: {{ p.error }}</div>
+{% endfor %}
+
+{% if not days %}
+  <p class="empty">No free blocks match the current criteria.</p>
+{% endif %}
+
+{% macro hour_axis() -%}
+  <div class="tl-row tl-head">
+    <div class="tl-label"></div>
+    <div class="tl-track">
+      {% for h in axis.hours %}<span class="tl-hour" style="left:{{ '%.3f' % h.left }}%">{{ h.label }}</span>{% endfor %}
+    </div>
+  </div>
+{%- endmacro %}
+
+{% for d in days %}
+<section class="day {{ 'weekend' if d.day.weekday() >= 5 else 'weekday' }}">
+  <h2>{{ d.day.strftime('%A, %d %B %Y') }} <small>{{ d.count }}</small></h2>
+  <div class="timeline">
+    {{ hour_axis() }}
+    {% for c in d.clubs %}
+    <div class="tl-club">
+      <a href="{{ c.club.url }}" target="_blank" rel="noopener">{{ c.club.name }}</a>
+      {% if c.club.address %}<small>{{ c.club.address }}</small>{% endif %}
+    </div>
+    {% for ct in c.courts %}
+    <div class="tl-row">
+      <div class="tl-label">
+        <span class="name">{{ ct.court.name }}</span>
+        <span class="meta">
+          {% if ct.court.indoor is true %}<span class="tag">indoor</span>{% elif ct.court.indoor is false %}<span class="tag">outdoor</span>{% endif %}
+          {% if ct.court.surface %}<span class="tag">{{ ct.court.surface }}</span>{% endif %}
+        </span>
+      </div>
+      <div class="tl-track">
+        {% for h in axis.hours %}<i class="tl-grid" style="left:{{ '%.3f' % h.left }}%"></i>{% endfor %}
+        {% for p in ct.placed %}
+        {% set b = p.block %}
+        <a class="blk" href="{{ b.booking_url }}" target="_blank" rel="noopener"
+           style="left:{{ '%.3f' % p.left }}%;width:{{ '%.3f' % p.width }}%"
+           title="{{ ct.court.name }}: {{ b.start.strftime('%H:%M') }}–{{ b.end.strftime('%H:%M') }} ({{ b.minutes // 60 }}h{% if b.minutes % 60 %}{{ '%02d' % (b.minutes % 60) }}{% endif %}) – click to book">
+          <span>{{ b.start.strftime('%H:%M') }}–{{ b.end.strftime('%H:%M') }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}

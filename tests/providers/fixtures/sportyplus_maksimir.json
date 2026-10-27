@@ -1,0 +1,1563 @@
+{
+ "data": [
+  {
+   "id": 1170,
+   "name": "Akril vanjski",
+   "type": "open",
+   "is_active": true,
+   "surface": {
+    "title": "Akril",
+    "badge": "acrylic"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "tennis",
+     "name": "Tenis"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 0,
+     "hidden": false,
+     "price": 5
+    },
+    "800": {
+     "time": 800,
+     "id": 1169405,
+     "start_time": 800,
+     "end_time": 900,
+     "type": "special"
+    },
+    "900": {
+     "time": 900,
+     "id": 1169406,
+     "start_time": 900,
+     "end_time": 1000,
+     "type": "special"
+    },
+    "1000": {
+     "time": 1000,
+     "id": 1169409,
+     "start_time": 1000,
+     "end_time": 1100,
+     "type": "special"
+    },
+    "1100": {
+     "time": 1100,
+     "id": 1169410,
+     "start_time": 1100,
+     "end_time": 1200,
+     "type": "special"
+    },
+    "1200": {
+     "time": 1200,
+     "id": 1169411,
+     "start_time": 1200,
+     "end_time": 1300,
+     "type": "special"
+    },
+    "1300": {
+     "time": 1300,
+     "id": 1169412,
+     "start_time": 1300,
+     "end_time": 1400,
+     "type": "special"
+    },
+    "1400": {
+     "time": 1400,
+     "id": 1169413,
+     "start_time": 1400,
+     "end_time": 1500,
+     "type": "special"
+    },
+    "1500": {
+     "time": 1500,
+     "id": 1169414,
+     "start_time": 1500,
+     "end_time": 1600,
+     "type": "special"
+    },
+    "1600": {
+     "time": 1600,
+     "id": 1169415,
+     "start_time": 1600,
+     "end_time": 1700,
+     "type": "special"
+    },
+    "1700": {
+     "time": 1700,
+     "id": 1169416,
+     "start_time": 1700,
+     "end_time": 1800,
+     "type": "special"
+    },
+    "1800": {
+     "time": 1800,
+     "id": 1169417,
+     "start_time": 1800,
+     "end_time": 1900,
+     "type": "special"
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1169418,
+     "start_time": 1900,
+     "end_time": 2000,
+     "type": "special"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 1169419,
+     "start_time": 2000,
+     "end_time": 2100,
+     "type": "special"
+    },
+    "2100": {
+     "time": 2100,
+     "id": 1169420,
+     "start_time": 2100,
+     "end_time": 2200,
+     "type": "special"
+    },
+    "2200": {
+     "time": 2200,
+     "id": 0,
+     "hidden": false,
+     "price": 9
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": 1326,
+   "name": "Akril vanjski",
+   "type": "open",
+   "is_active": true,
+   "surface": {
+    "title": "Akril",
+    "badge": "acrylic"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "tennis",
+     "name": "Tenis"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 0,
+     "hidden": false,
+     "price": 5
+    },
+    "800": {
+     "time": 800,
+     "id": 0,
+     "hidden": false,
+     "price": 5
+    },
+    "900": {
+     "time": 900,
+     "id": 0,
+     "hidden": false,
+     "price": 5
+    },
+    "1000": {
+     "time": 1000,
+     "id": 0,
+     "hidden": false,
+     "price": 5
+    },
+    "1100": {
+     "time": 1100,
+     "id": 0,
+     "hidden": false,
+     "price": 5
+    },
+    "1200": {
+     "time": 1200,
+     "id": 1184669,
+     "start_time": 1200,
+     "end_time": 1400,
+     "type": "players"
+    },
+    "1300": {
+     "time": 1300,
+     "id": 1184669,
+     "start_time": 1200,
+     "end_time": 1400,
+     "type": "players"
+    },
+    "1400": {
+     "time": 1400,
+     "id": 1185754,
+     "start_time": 1400,
+     "end_time": 1600,
+     "type": "players"
+    },
+    "1500": {
+     "time": 1500,
+     "id": 1185754,
+     "start_time": 1400,
+     "end_time": 1600,
+     "type": "players"
+    },
+    "1600": {
+     "time": 1600,
+     "id": 0,
+     "hidden": false,
+     "price": 9
+    },
+    "1700": {
+     "time": 1700,
+     "id": 1168389,
+     "start_time": 1700,
+     "end_time": 1800,
+     "type": "players"
+    },
+    "1800": {
+     "time": 1800,
+     "id": 1176157,
+     "start_time": 1800,
+     "end_time": 1900,
+     "type": "players"
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1155813,
+     "start_time": 1900,
+     "end_time": 2000,
+     "type": "players"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 1173706,
+     "start_time": 2000,
+     "end_time": 2200,
+     "type": "players"
+    },
+    "2100": {
+     "time": 2100,
+     "id": 1173706,
+     "start_time": 2000,
+     "end_time": 2200,
+     "type": "players"
+    },
+    "2200": {
+     "time": 2200,
+     "id": 0,
+     "hidden": false,
+     "price": 9
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": 373,
+   "name": "Teren zemlja (umjetna)",
+   "type": "open",
+   "is_active": true,
+   "surface": {
+    "title": "Zemlja",
+    "badge": "clay"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "tennis",
+     "name": "Tenis"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 1186548,
+     "start_time": 700,
+     "end_time": 900,
+     "type": "players"
+    },
+    "800": {
+     "time": 800,
+     "id": 1186548,
+     "start_time": 700,
+     "end_time": 900,
+     "type": "players"
+    },
+    "900": {
+     "time": 900,
+     "id": 1186886,
+     "start_time": 900,
+     "end_time": 1000,
+     "type": "players"
+    },
+    "1000": {
+     "time": 1000,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1100": {
+     "time": 1100,
+     "id": 1186765,
+     "start_time": 1100,
+     "end_time": 1200,
+     "type": "guest"
+    },
+    "1200": {
+     "time": 1200,
+     "id": 1186459,
+     "start_time": 1200,
+     "end_time": 1300,
+     "type": "guest"
+    },
+    "1300": {
+     "time": 1300,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1400": {
+     "time": 1400,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1500": {
+     "time": 1500,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1600": {
+     "time": 1600,
+     "id": 1186484,
+     "start_time": 1600,
+     "end_time": 1700,
+     "type": "players"
+    },
+    "1700": {
+     "time": 1700,
+     "id": 1166676,
+     "start_time": 1700,
+     "end_time": 1800,
+     "type": "players"
+    },
+    "1800": {
+     "time": 1800,
+     "id": 1166677,
+     "start_time": 1800,
+     "end_time": 1900,
+     "type": "players"
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1186788,
+     "start_time": 1900,
+     "end_time": 2000,
+     "type": "players"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 1173723,
+     "start_time": 2000,
+     "end_time": 2100,
+     "type": "players"
+    },
+    "2100": {
+     "time": 2100,
+     "id": 1186888,
+     "start_time": 2100,
+     "end_time": 2200,
+     "type": "players"
+    },
+    "2200": {
+     "time": 2200,
+     "id": 0,
+     "hidden": false,
+     "price": 10
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": 278,
+   "name": "Squash",
+   "type": "closed",
+   "is_active": true,
+   "surface": {
+    "title": "Drugo",
+    "badge": "other"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "squash",
+     "name": "Squash"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "800": {
+     "time": 800,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "900": {
+     "time": 900,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1000": {
+     "time": 1000,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1100": {
+     "time": 1100,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1200": {
+     "time": 1200,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1300": {
+     "time": 1300,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1400": {
+     "time": 1400,
+     "id": 0,
+     "hidden": false,
+     "price": 7
+    },
+    "1500": {
+     "time": 1500,
+     "id": 1185890,
+     "start_time": 1500,
+     "end_time": 1600,
+     "type": "players"
+    },
+    "1600": {
+     "time": 1600,
+     "id": 0,
+     "hidden": false,
+     "price": 10
+    },
+    "1700": {
+     "time": 1700,
+     "id": 0,
+     "hidden": false,
+     "price": 10
+    },
+    "1800": {
+     "time": 1800,
+     "id": 0,
+     "hidden": false,
+     "price": 10
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1186419,
+     "start_time": 1900,
+     "end_time": 2000,
+     "type": "players"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 0,
+     "hidden": false,
+     "price": 10
+    },
+    "2100": {
+     "time": 2100,
+     "id": 0,
+     "hidden": false,
+     "price": 10
+    },
+    "2200": {
+     "time": 2200,
+     "id": 0,
+     "hidden": false,
+     "price": 10
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": 273,
+   "name": "Dvorana 1",
+   "type": "closed",
+   "is_active": true,
+   "surface": {
+    "title": "Akril",
+    "badge": "acrylic"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "tennis",
+     "name": "Tenis"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 0,
+     "hidden": false,
+     "price": 15
+    },
+    "800": {
+     "time": 800,
+     "id": 1094681,
+     "start_time": 800,
+     "end_time": 900,
+     "type": "special"
+    },
+    "900": {
+     "time": 900,
+     "id": 1094707,
+     "start_time": 900,
+     "end_time": 1000,
+     "type": "special"
+    },
+    "1000": {
+     "time": 1000,
+     "id": 1094734,
+     "start_time": 1000,
+     "end_time": 1100,
+     "type": "special"
+    },
+    "1100": {
+     "time": 1100,
+     "id": 1094762,
+     "start_time": 1100,
+     "end_time": 1200,
+     "type": "special"
+    },
+    "1200": {
+     "time": 1200,
+     "id": 1094788,
+     "start_time": 1200,
+     "end_time": 1300,
+     "type": "special"
+    },
+    "1300": {
+     "time": 1300,
+     "id": 1094817,
+     "start_time": 1300,
+     "end_time": 1400,
+     "type": "special"
+    },
+    "1400": {
+     "time": 1400,
+     "id": 1094845,
+     "start_time": 1400,
+     "end_time": 1500,
+     "type": "special"
+    },
+    "1500": {
+     "time": 1500,
+     "id": 1094871,
+     "start_time": 1500,
+     "end_time": 1600,
+     "type": "special"
+    },
+    "1600": {
+     "time": 1600,
+     "id": 1094897,
+     "start_time": 1600,
+     "end_time": 1700,
+     "type": "special"
+    },
+    "1700": {
+     "time": 1700,
+     "id": 1094925,
+     "start_time": 1700,
+     "end_time": 1800,
+     "type": "special"
+    },
+    "1800": {
+     "time": 1800,
+     "id": 1094955,
+     "start_time": 1800,
+     "end_time": 1900,
+     "type": "special"
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1094984,
+     "start_time": 1900,
+     "end_time": 2000,
+     "type": "special"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 1095012,
+     "start_time": 2000,
+     "end_time": 2100,
+     "type": "special"
+    },
+    "2100": {
+     "time": 2100,
+     "id": 1095039,
+     "start_time": 2100,
+     "end_time": 2200,
+     "type": "special"
+    },
+    "2200": {
+     "time": 2200,
+     "id": 0,
+     "hidden": false,
+     "price": 20
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": 274,
+   "name": "Dvorana 2",
+   "type": "closed",
+   "is_active": true,
+   "surface": {
+    "title": "Akril",
+    "badge": "acrylic"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "tennis",
+     "name": "Tenis"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 1168872,
+     "start_time": 700,
+     "end_time": 800,
+     "type": "guest"
+    },
+    "800": {
+     "time": 800,
+     "id": 1095068,
+     "start_time": 800,
+     "end_time": 900,
+     "type": "special"
+    },
+    "900": {
+     "time": 900,
+     "id": 1095095,
+     "start_time": 900,
+     "end_time": 1000,
+     "type": "special"
+    },
+    "1000": {
+     "time": 1000,
+     "id": 1095122,
+     "start_time": 1000,
+     "end_time": 1100,
+     "type": "special"
+    },
+    "1100": {
+     "time": 1100,
+     "id": 1095149,
+     "start_time": 1100,
+     "end_time": 1200,
+     "type": "special"
+    },
+    "1200": {
+     "time": 1200,
+     "id": 1169742,
+     "start_time": 1200,
+     "end_time": 1400,
+     "type": "players"
+    },
+    "1300": {
+     "time": 1300,
+     "id": 1169742,
+     "start_time": 1200,
+     "end_time": 1400,
+     "type": "players"
+    },
+    "1400": {
+     "time": 1400,
+     "id": 1095176,
+     "start_time": 1400,
+     "end_time": 1500,
+     "type": "special"
+    },
+    "1500": {
+     "time": 1500,
+     "id": 1095204,
+     "start_time": 1500,
+     "end_time": 1600,
+     "type": "special"
+    },
+    "1600": {
+     "time": 1600,
+     "id": 1095232,
+     "start_time": 1600,
+     "end_time": 1700,
+     "type": "special"
+    },
+    "1700": {
+     "time": 1700,
+     "id": 1095259,
+     "start_time": 1700,
+     "end_time": 1800,
+     "type": "special"
+    },
+    "1800": {
+     "time": 1800,
+     "id": 1095287,
+     "start_time": 1800,
+     "end_time": 1900,
+     "type": "special"
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1103492,
+     "start_time": 1900,
+     "end_time": 2000,
+     "type": "special"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 1095318,
+     "start_time": 2000,
+     "end_time": 2100,
+     "type": "special"
+    },
+    "2100": {
+     "time": 2100,
+     "id": 1095345,
+     "start_time": 2100,
+     "end_time": 2200,
+     "type": "special"
+    },
+    "2200": {
+     "time": 2200,
+     "id": 0,
+     "hidden": false,
+     "price": 20
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": 275,
+   "name": "Dvorana 3",
+   "type": "closed",
+   "is_active": true,
+   "surface": {
+    "title": "Akril",
+    "badge": "acrylic"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "tennis",
+     "name": "Tenis"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 1150194,
+     "start_time": 700,
+     "end_time": 800,
+     "type": "special"
+    },
+    "800": {
+     "time": 800,
+     "id": 0,
+     "hidden": false,
+     "price": 15
+    },
+    "900": {
+     "time": 900,
+     "id": 1095403,
+     "start_time": 900,
+     "end_time": 1000,
+     "type": "special"
+    },
+    "1000": {
+     "time": 1000,
+     "id": 1095429,
+     "start_time": 1000,
+     "end_time": 1100,
+     "type": "special"
+    },
+    "1100": {
+     "time": 1100,
+     "id": 1095456,
+     "start_time": 1100,
+     "end_time": 1200,
+     "type": "special"
+    },
+    "1200": {
+     "time": 1200,
+     "id": 1150142,
+     "start_time": 1200,
+     "end_time": 1300,
+     "type": "special"
+    },
+    "1300": {
+     "time": 1300,
+     "id": 1150169,
+     "start_time": 1300,
+     "end_time": 1400,
+     "type": "special"
+    },
+    "1400": {
+     "time": 1400,
+     "id": 1095483,
+     "start_time": 1400,
+     "end_time": 1500,
+     "type": "special"
+    },
+    "1500": {
+     "time": 1500,
+     "id": 1095511,
+     "start_time": 1500,
+     "end_time": 1600,
+     "type": "special"
+    },
+    "1600": {
+     "time": 1600,
+     "id": 1095538,
+     "start_time": 1600,
+     "end_time": 1700,
+     "type": "special"
+    },
+    "1700": {
+     "time": 1700,
+     "id": 1095566,
+     "start_time": 1700,
+     "end_time": 1800,
+     "type": "special"
+    },
+    "1800": {
+     "time": 1800,
+     "id": 1095595,
+     "start_time": 1800,
+     "end_time": 1900,
+     "type": "special"
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1151407,
+     "start_time": 1900,
+     "end_time": 2100,
+     "type": "players"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 1151407,
+     "start_time": 1900,
+     "end_time": 2100,
+     "type": "players"
+    },
+    "2100": {
+     "time": 2100,
+     "id": 1180080,
+     "start_time": 2100,
+     "end_time": 2200,
+     "type": "players"
+    },
+    "2200": {
+     "time": 2200,
+     "id": 0,
+     "hidden": false,
+     "price": 20
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "id": 276,
+   "name": "Dvorana 4",
+   "type": "closed",
+   "is_active": true,
+   "surface": {
+    "title": "Akril",
+    "badge": "acrylic"
+   },
+   "reservation_duration": 60,
+   "user_30min": false,
+   "sports": [
+    {
+     "slug": "tennis",
+     "name": "Tenis"
+    }
+   ],
+   "parsed_reservations": {
+    "700": {
+     "time": 700,
+     "id": 0,
+     "hidden": false,
+     "price": 15
+    },
+    "800": {
+     "time": 800,
+     "id": 1095637,
+     "start_time": 800,
+     "end_time": 900,
+     "type": "special"
+    },
+    "900": {
+     "time": 900,
+     "id": 1095663,
+     "start_time": 900,
+     "end_time": 1000,
+     "type": "special"
+    },
+    "1000": {
+     "time": 1000,
+     "id": 1095692,
+     "start_time": 1000,
+     "end_time": 1100,
+     "type": "special"
+    },
+    "1100": {
+     "time": 1100,
+     "id": 1095718,
+     "start_time": 1100,
+     "end_time": 1200,
+     "type": "special"
+    },
+    "1200": {
+     "time": 1200,
+     "id": 1187168,
+     "start_time": 1200,
+     "end_time": 1300,
+     "type": "guest"
+    },
+    "1300": {
+     "time": 1300,
+     "id": 1174503,
+     "start_time": 1300,
+     "end_time": 1400,
+     "type": "players"
+    },
+    "1400": {
+     "time": 1400,
+     "id": 1095744,
+     "start_time": 1400,
+     "end_time": 1500,
+     "type": "special"
+    },
+    "1500": {
+     "time": 1500,
+     "id": 1095770,
+     "start_time": 1500,
+     "end_time": 1600,
+     "type": "special"
+    },
+    "1600": {
+     "time": 1600,
+     "id": 1095802,
+     "start_time": 1600,
+     "end_time": 1700,
+     "type": "special"
+    },
+    "1700": {
+     "time": 1700,
+     "id": 1095829,
+     "start_time": 1700,
+     "end_time": 1800,
+     "type": "special"
+    },
+    "1800": {
+     "time": 1800,
+     "id": 1095856,
+     "start_time": 1800,
+     "end_time": 1900,
+     "type": "special"
+    },
+    "1900": {
+     "time": 1900,
+     "id": 1095883,
+     "start_time": 1900,
+     "end_time": 2000,
+     "type": "special"
+    },
+    "2000": {
+     "time": 2000,
+     "id": 1095910,
+     "start_time": 2000,
+     "end_time": 2100,
+     "type": "special"
+    },
+    "2100": {
+     "time": 2100,
+     "id": 1095938,
+     "start_time": 2100,
+     "end_time": 2200,
+     "type": "special"
+    },
+    "2200": {
+     "time": 2200,
+     "id": 1176482,
+     "start_time": 2200,
+     "end_time": 2300,
+     "type": "players"
+    }
+   },
+   "working_span": [
+    {
+     "hour": 7,
+     "hidden": false
+    },
+    {
+     "hour": 8,
+     "hidden": false
+    },
+    {
+     "hour": 9,
+     "hidden": false
+    },
+    {
+     "hour": 10,
+     "hidden": false
+    },
+    {
+     "hour": 11,
+     "hidden": false
+    },
+    {
+     "hour": 12,
+     "hidden": false
+    },
+    {
+     "hour": 13,
+     "hidden": false
+    },
+    {
+     "hour": 14,
+     "hidden": false
+    },
+    {
+     "hour": 15,
+     "hidden": false
+    },
+    {
+     "hour": 16,
+     "hidden": false
+    },
+    {
+     "hour": 17,
+     "hidden": false
+    },
+    {
+     "hour": 18,
+     "hidden": false
+    },
+    {
+     "hour": 19,
+     "hidden": false
+    },
+    {
+     "hour": 20,
+     "hidden": false
+    },
+    {
+     "hour": 21,
+     "hidden": false
+    },
+    {
+     "hour": 22,
+     "hidden": false
+    }
+   ]
+  }
+ ],
+ "links": {
+  "next": null
+ },
+ "meta": {
+  "current_page": 1,
+  "last_page": 1,
+  "total": 8
+ },
+ "_date": "2026-10-27"
+}
