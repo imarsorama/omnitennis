@@ -1,0 +1,681 @@
+{
+  "details": {
+    "id": 96,
+    "name": "TK Građanski",
+    "timeZone": "Europe/Sarajevo",
+    "halfHourSlot": false,
+    "currency": "EUR",
+    "courts": [
+      {
+        "id": 397,
+        "active": true,
+        "name": "Teniski teren 2 - single only",
+        "courtType": "OUTDOOR",
+        "surfaceType": "CLAY",
+        "sports": [
+          "TENNIS"
+        ],
+        "number": 2,
+        "length": 24,
+        "width": 8
+      },
+      {
+        "id": 398,
+        "active": true,
+        "name": "Teniski teren 3",
+        "courtType": "OUTDOOR",
+        "surfaceType": "CLAY",
+        "sports": [
+          "TENNIS"
+        ],
+        "number": 3,
+        "length": 24,
+        "width": 11
+      },
+      {
+        "id": 396,
+        "active": true,
+        "name": "Teniski teren 1",
+        "courtType": "OUTDOOR",
+        "surfaceType": "CLAY",
+        "sports": [
+          "TENNIS"
+        ],
+        "number": 1,
+        "length": 24,
+        "width": 11
+      }
+    ],
+    "openingHours": [
+      {
+        "id": 667,
+        "dayOfWeek": "MONDAY",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "id": 668,
+        "dayOfWeek": "TUESDAY",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "id": 669,
+        "dayOfWeek": "WEDNESDAY",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "id": 670,
+        "dayOfWeek": "THURSDAY",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "id": 671,
+        "dayOfWeek": "FRIDAY",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "id": 672,
+        "dayOfWeek": "SATURDAY",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "id": 673,
+        "dayOfWeek": "SUNDAY",
+        "from": "09:00",
+        "to": "22:00"
+      }
+    ],
+    "timesOff": [
+      {
+        "from": "2026-11-01T09:00:00",
+        "id": 712,
+        "to": "2027-03-31T08:00:00"
+      }
+    ]
+  },
+  "search": [
+    {
+      "id": 96,
+      "name": "TK GraÄanski",
+      "address": "Ul. Vjekoslava KlaiÄa 3",
+      "cityName": "Zagreb",
+      "sports": [
+        "TENNIS"
+      ],
+      "paymentMethods": [
+        "ON_SITE"
+      ],
+      "rating": 4.6,
+      "offers": [
+        {
+          "from": "2026-10-28T08:00:00",
+          "to": "2026-10-28T09:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T09:00:00",
+          "to": "2026-10-28T10:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T10:00:00",
+          "to": "2026-10-28T11:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T11:00:00",
+          "to": "2026-10-28T12:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T12:00:00",
+          "to": "2026-10-28T13:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T13:00:00",
+          "to": "2026-10-28T14:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T14:00:00",
+          "to": "2026-10-28T15:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T15:00:00",
+          "to": "2026-10-28T16:00:00",
+          "sport": "TENNIS",
+          "price": 10.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T18:00:00",
+          "to": "2026-10-28T19:00:00",
+          "sport": "TENNIS",
+          "price": 18.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T19:00:00",
+          "to": "2026-10-28T20:00:00",
+          "sport": "TENNIS",
+          "price": 18.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T20:00:00",
+          "to": "2026-10-28T21:00:00",
+          "sport": "TENNIS",
+          "price": 18.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        },
+        {
+          "from": "2026-10-28T21:00:00",
+          "to": "2026-10-28T22:00:00",
+          "sport": "TENNIS",
+          "price": 18.0,
+          "currency": "EUR",
+          "courts": [
+            {
+              "courtType": "OUTDOOR",
+              "id": 397,
+              "length": 24,
+              "name": "Teniski teren 2 - single only",
+              "number": 2,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 8
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 398,
+              "length": 24,
+              "name": "Teniski teren 3",
+              "number": 3,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            },
+            {
+              "courtType": "OUTDOOR",
+              "id": 396,
+              "length": 24,
+              "name": "Teniski teren 1",
+              "number": 1,
+              "sports": [
+                "TENNIS"
+              ],
+              "sportsCenterId": null,
+              "surfaceType": "CLAY",
+              "width": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

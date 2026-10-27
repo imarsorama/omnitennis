@@ -269,7 +269,7 @@ async def api_providers(
             "key": key,
             "club": cls.club.model_dump() if getattr(cls, "club", None) else None,
             "enabled": key in enabled,
-            "credentials_present": settings.credentials(key).present,
+            "credentials_present": cls.credentials_present(settings),
         }
         for key, cls in sorted(all_providers().items())
     ]

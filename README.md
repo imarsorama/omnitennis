@@ -50,18 +50,46 @@ pytest
 | `mladost`  | HATK Mladost | Playloc (`hatk-mladost.playloc.app`)      | no    |
 | `maksimir` | TC Maksimir  | Sporty.plus (`maksimir.sporty.plus`)      | no    |
 | `zagi`     | TK Zagi      | Tivazerra (`termini.zagi-sport.hr`)       | no    |
+| `gradanski`| TK Građanski | Sport Router (`app.sportrouter.com`, mobile app) | yes |
 
-All three platforms host multiple clubs; adding another club on the same
+All platforms host multiple clubs; adding another club on the same
 platform is a short subclass of `PlaylocProvider` (`app/providers/playloc.py`:
 `key`, `slug`, `club`), `SportyPlusProvider` (`app/providers/sportyplus.py`:
-`key`, `subdomain`, `club`; `club_id` is resolved automatically) or
+`key`, `subdomain`, `club`; `club_id` is resolved automatically),
 `TivazerraProvider` (`app/providers/tivazerra.py`: `key`, `base_url`, `club`;
-tennis venues are discovered automatically).
+tennis venues are discovered automatically) or `SportRouterProvider`
+(`app/providers/sportrouter.py`: `key`, `center_id`, `club`).
 
 Notes:
 - Playloc and Tivazerra expose a 7-day booking horizon, so later dates return nothing.
 - Sporty.plus deep links cannot carry a date; the Book link opens the courts
   page and you pick the day there.
+- Sport Router has no web booking; the Book link opens `sportrouter.com` and
+  the actual booking happens in the Sport Router mobile app. Centres publish
+  only a few days ahead, and TK Građanski's outdoor clay courts close for
+  winter (Nov–Mar), during which no slots are returned.
+
+### Sport Router login
+
+Sport Router's API requires a signed-in user, even for reading availability.
+One account serves every Sport Router club. The mobile app signs in with
+Google, but the backend also accepts plain email/password accounts, so create
+a dedicated one for this app:
+
+```powershell
+.venv\Scripts\python.exe -m app.providers.sportrouter register you@example.com <password>
+```
+
+Then put the values in `.env`:
+
+```
+OMNI_SPORTROUTER_USERNAME=you@example.com
+OMNI_SPORTROUTER_PASSWORD=<password>
+```
+
+Alternatively, for an existing Google account, set `OMNI_SPORTROUTER_REFRESH_TOKEN`
+to the `refreshToken` the app's OAuth callback (`/auth/google/callback`) hands
+back; the provider then calls `GET /auth/refresh` to obtain access tokens.
 
 Development mocks: `mock_salata`, `mock_jarun`, `mock_broken`.
 
@@ -72,7 +100,8 @@ Development mocks: `mock_salata`, `mock_jarun`, `mock_broken`.
 2. Register it with `@register` and add `<key>` to `OMNI_ENABLED_PROVIDERS` in `.env`.
 3. If login is required, use `CookieSession` or `TokenSession` from `base.py`
    and read credentials via `settings.credentials("<key>")`
-   (`OMNI_<KEY>_USERNAME` / `OMNI_<KEY>_PASSWORD`).
+   (`OMNI_<KEY>_USERNAME` / `OMNI_<KEY>_PASSWORD`). Set `credentials_key` on the
+   class when one account covers several clubs of a platform (e.g. `sportrouter`).
 4. Return only tennis courts; set `indoor` / `surface` when the source exposes them
    and build a `booking_url` that lands the user as close as possible to the slot.
 

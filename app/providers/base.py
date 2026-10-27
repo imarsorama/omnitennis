@@ -6,11 +6,14 @@ import asyncio
 from abc import ABC, abstractmethod
 from collections.abc import Awaitable, Callable, Mapping
 from datetime import date
-from typing import Any
+from typing import TYPE_CHECKING, Any, ClassVar
 
 import httpx
 
 from ..models import Club, Slot
+
+if TYPE_CHECKING:
+    from ..config import Settings
 
 
 class ProviderError(Exception):
@@ -22,6 +25,13 @@ class Provider(ABC):
 
     key: str
     club: Club
+    #: Env prefix for credentials (OMNI_<CREDENTIALS_KEY>_USERNAME / _PASSWORD).
+    #: ``None`` means ``key``; platforms with one account for many clubs share a prefix.
+    credentials_key: ClassVar[str | None] = None
+
+    @classmethod
+    def credentials_present(cls, settings: Settings) -> bool:
+        return settings.credentials(cls.credentials_key or cls.key).present
 
     @abstractmethod
     async def fetch(self, date_from: date, date_to: date) -> list[Slot]:
