@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     provider_timeout_seconds: float = 20.0
     default_horizon_days: int = 14
     enabled_providers: Annotated[list[str], NoDecode] = Field(
-        default_factory=lambda: ["mladost", "maksimir", "zagi"]
+        default_factory=lambda: ["mladost", "maksimir", "zagi", "prince"]
     )
 
     @field_validator("enabled_providers", mode="before")

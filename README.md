@@ -51,17 +51,22 @@ pytest
 | `maksimir` | TC Maksimir  | Sporty.plus (`maksimir.sporty.plus`)      | no    |
 | `zagi`     | TK Zagi      | Tivazerra (`termini.zagi-sport.hr`)       | no    |
 | `gradanski`| TK Građanski | Sport Router (`app.sportrouter.com`, mobile app) | yes |
+| `prince`   | TK Prince    | Custom SPA (`prince.hr/app/book`)         | no    |
 
-All platforms host multiple clubs; adding another club on the same
+Most platforms host multiple clubs; adding another club on the same
 platform is a short subclass of `PlaylocProvider` (`app/providers/playloc.py`:
 `key`, `slug`, `club`), `SportyPlusProvider` (`app/providers/sportyplus.py`:
 `key`, `subdomain`, `club`; `club_id` is resolved automatically),
 `TivazerraProvider` (`app/providers/tivazerra.py`: `key`, `base_url`, `club`;
 tennis venues are discovered automatically) or `SportRouterProvider`
-(`app/providers/sportrouter.py`: `key`, `center_id`, `club`).
+(`app/providers/sportrouter.py`: `key`, `center_id`, `club`). Prince runs its
+own single-club system (`app/providers/prince.py`).
 
 Notes:
-- Playloc and Tivazerra expose a 7-day booking horizon, so later dates return nothing.
+- Playloc, Tivazerra and Prince expose a 7-day booking horizon, so later dates return nothing.
+- Prince needs a name and e-mail only when booking; reading availability is
+  anonymous. The Book link pre-fills court, day and start time. Its clay courts
+  sit under an air dome from 1 Oct to 16 Apr, so they count as indoor then.
 - Sporty.plus deep links cannot carry a date; the Book link opens the courts
   page and you pick the day there.
 - Sport Router has no web booking; the Book link opens `sportrouter.com` and

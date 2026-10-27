@@ -1,0 +1,376 @@
+{
+  "allocations": [
+    {
+      "units": 1,
+      "end_min": 1110,
+      "end_date": "2026-10-28",
+      "start_min": 1020,
+      "start_date": "2026-10-28",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 1200,
+      "end_date": "2026-10-28",
+      "start_min": 1110,
+      "start_date": "2026-10-28",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 1290,
+      "end_date": "2026-10-29",
+      "start_min": 1200,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 750,
+      "end_date": "2026-10-31",
+      "start_min": 660,
+      "start_date": "2026-10-31",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 720,
+      "end_date": "2026-11-01",
+      "start_min": 600,
+      "start_date": "2026-11-01",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 1200,
+      "end_date": "2026-10-29",
+      "start_min": 1110,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 1260,
+      "end_date": "2026-10-28",
+      "start_min": 1140,
+      "start_date": "2026-10-28",
+      "resource_id": "r-t2"
+    },
+    {
+      "units": 1,
+      "end_min": 1320,
+      "end_date": "2026-10-29",
+      "start_min": 1200,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t2"
+    },
+    {
+      "units": 1,
+      "end_min": 720,
+      "end_date": "2026-11-01",
+      "start_min": 600,
+      "start_date": "2026-11-01",
+      "resource_id": "r-t2"
+    },
+    {
+      "units": 1,
+      "end_min": 1260,
+      "end_date": "2026-10-29",
+      "start_min": 1170,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t4"
+    },
+    {
+      "units": 1,
+      "end_min": 1080,
+      "end_date": "2026-10-29",
+      "start_min": 1020,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t3"
+    },
+    {
+      "units": 1,
+      "end_min": 1200,
+      "end_date": "2026-10-29",
+      "start_min": 1080,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t3"
+    },
+    {
+      "units": 1,
+      "end_min": 1200,
+      "end_date": "2026-10-28",
+      "start_min": 1110,
+      "start_date": "2026-10-28",
+      "resource_id": "r-t3"
+    },
+    {
+      "units": 1,
+      "end_min": 720,
+      "end_date": "2026-11-01",
+      "start_min": 600,
+      "start_date": "2026-11-01",
+      "resource_id": "r-t3"
+    },
+    {
+      "units": 1,
+      "end_min": 1200,
+      "end_date": "2026-10-28",
+      "start_min": 1080,
+      "start_date": "2026-10-28",
+      "resource_id": "r-t5"
+    },
+    {
+      "units": 1,
+      "end_min": 1290,
+      "end_date": "2026-10-28",
+      "start_min": 1200,
+      "start_date": "2026-10-28",
+      "resource_id": "r-t5"
+    },
+    {
+      "units": 1,
+      "end_min": 660,
+      "end_date": "2026-10-28",
+      "start_min": 600,
+      "start_date": "2026-10-28",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 660,
+      "end_date": "2026-10-29",
+      "start_min": 600,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t1"
+    },
+    {
+      "units": 1,
+      "end_min": 1260,
+      "end_date": "2026-10-29",
+      "start_min": 1050,
+      "start_date": "2026-10-29",
+      "resource_id": "r-t5"
+    },
+    {
+      "units": 1,
+      "end_min": 840,
+      "end_date": "2026-11-01",
+      "start_min": 660,
+      "start_date": "2026-11-01",
+      "resource_id": "r-t5"
+    },
+    {
+      "units": 1,
+      "start_min": 0,
+      "end_min": 1440,
+      "start_date": "2026-10-29",
+      "end_date": "2026-10-29",
+      "resource_id": "r-t4"
+    },
+    {
+      "units": 1,
+      "start_min": 540,
+      "end_min": 600,
+      "start_date": "2026-10-27",
+      "end_date": "2026-10-31",
+      "resource_id": "r-t5"
+    }
+  ],
+  "config": {
+    "id": true,
+    "version": 58,
+    "policies": {
+      "accessLeadHours": 2,
+      "bankHoldMinutes": 120,
+      "cardHoldMinutes": 35,
+      "paymentRequired": false,
+      "simulatedPayments": false
+    },
+    "pricing_snapshot": {
+      "hours": [
+        {
+          "id": "summer",
+          "name": "Ljetna sezona (travanj–rujan)",
+          "sort": 10,
+          "to_date": "2026-09-30",
+          "open_min": 420,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "close_min": 1380,
+          "from_date": "2026-04-01",
+          "resource_type": null,
+          "lights_from_min": 1200
+        },
+        {
+          "id": "winter",
+          "name": "Zimska sezona (listopad–ožujak)",
+          "sort": 20,
+          "to_date": "2027-03-31",
+          "open_min": 480,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "close_min": 1380,
+          "from_date": "2026-10-01",
+          "resource_type": null,
+          "lights_from_min": 990
+        },
+        {
+          "id": "restaurant",
+          "name": "Caffe Prince",
+          "sort": 30,
+          "to_date": "2030-12-31",
+          "open_min": 480,
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "close_min": 1380,
+          "from_date": "2026-01-01",
+          "resource_type": "restaurant",
+          "lights_from_min": null
+        }
+      ],
+      "spaces": {
+        "T1": {
+          "in_offer": true,
+          "space_code": "T1",
+          "slot_minutes": 30,
+          "lights_applies": false,
+          "allowed_durations": [
+            60,
+            90,
+            120
+          ]
+        },
+        "T2": {
+          "in_offer": true,
+          "space_code": "T2",
+          "slot_minutes": 30,
+          "lights_applies": false,
+          "allowed_durations": [
+            60,
+            90,
+            120
+          ]
+        },
+        "T3": {
+          "in_offer": true,
+          "space_code": "T3",
+          "slot_minutes": 30,
+          "lights_applies": false,
+          "allowed_durations": [
+            60,
+            90,
+            120
+          ]
+        },
+        "T4": {
+          "in_offer": true,
+          "space_code": "T4",
+          "slot_minutes": 30,
+          "lights_applies": false,
+          "allowed_durations": [
+            60,
+            90,
+            120
+          ]
+        },
+        "T5": {
+          "in_offer": true,
+          "space_code": "T5",
+          "slot_minutes": 30,
+          "lights_applies": false,
+          "allowed_durations": [
+            60,
+            90,
+            120
+          ]
+        },
+        "REST": {
+          "in_offer": true,
+          "space_code": "REST",
+          "slot_minutes": 30,
+          "lights_applies": false,
+          "allowed_durations": [
+            90,
+            120,
+            180,
+            240
+          ]
+        }
+      },
+      "booking_rules": {
+        "longterm": [
+          {
+            "id": "3m",
+            "pct": 10,
+            "label": "3 mjeseca",
+            "weeks": 12,
+            "season": null,
+            "label_en": "3 months"
+          },
+          {
+            "id": "6m",
+            "pct": 15,
+            "label": "6 mjeseci",
+            "weeks": 24,
+            "season": null,
+            "label_en": "6 months"
+          },
+          {
+            "id": "winter",
+            "pct": 15,
+            "label": "Cijela zimska sezona",
+            "weeks": null,
+            "season": "winter",
+            "label_en": "The whole winter season"
+          },
+          {
+            "id": "year",
+            "pct": 20,
+            "label": "Godišnji paket",
+            "weeks": 48,
+            "season": null,
+            "label_en": "Annual package"
+          }
+        ],
+        "winter_to_md": "04-16",
+        "lead_time_min": 60,
+        "max_days_ahead": 7,
+        "rental_enabled": true,
+        "winter_from_md": "10-01",
+        "weekend_enabled": true,
+        "provisional_days": 7,
+        "cancel_free_hours": 24,
+        "final_confirm_days": 3,
+        "web_max_days_ahead": null,
+        "table_confirm_required": false
+      },
+      "windows": [],
+      "version": 58
+    }
+  },
+  "guest": true,
+  "batch_max": 160,
+  "need_names": true
+}
