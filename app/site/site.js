@@ -228,34 +228,73 @@
     const when = gen.toLocaleString(undefined, { weekday: "short", hour: "2-digit", minute: "2-digit" });
     const age = ageMin < 1 ? "just now" : ageMin < 60 ? `${ageMin} min ago` : `${Math.floor(ageMin / 60)} h ${ageMin % 60} min ago`;
     info.textContent = `Snapshot taken ${when} (${age}); refreshed automatically a few times per hour.`;
-    if (ageMin > 180) info.innerHTML += ' <strong style="color:var(--error)">The snapshot is stale – the scheduled refresh may have stopped.</strong>';
+    if (ageMin > STALE_MINUTES) {
+      const run = data.workflow_url
+        ? ` <a href="${esc(data.workflow_url)}" target="_blank" rel="noopener">Run the refresh manually</a> (repository owner only).`
+        : "";
+      info.innerHTML += ` <strong style="color:var(--error)">The snapshot is stale – the scheduled refresh may be delayed or stopped.</strong>${run}`;
+    }
+  }
+
+  // ------------------------------------------------------------------ loading
+
+  const STALE_MINUTES = 180;
+  const RELOAD_MS = 5 * 60 * 1000; // pick up new snapshots while the tab stays open
+
+  async function load() {
+    // Cache-bust so the GitHub Pages CDN cannot hand back a previous deployment.
+    const r = await fetch(`./availability.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return r.json();
+  }
+
+  function applyData(fresh) {
+    data = fresh;
+    defaults = { date_from: data.date_from, date_to: data.date_to, min_minutes: "120", indoor: "any" };
+    const unchecked = new Set([...form.querySelectorAll('input[name="club"]')].filter((i) => !i.checked).map((i) => i.value));
+    const clubs = data.providers.filter((p) => p.club).map((p) => p.club);
+    document.getElementById("clubs").innerHTML = clubs.map((c) =>
+      `<label class="chk"><input type="checkbox" name="club" value="${esc(c.key)}" ${unchecked.has(c.key) ? "" : "checked"}> ${esc(c.name)}</label>`).join("");
+    form.elements.date_from.min = data.date_from;
+    form.elements.date_to.max = data.date_to;
+  }
+
+  async function refresh() {
+    const btn = document.getElementById("refresh");
+    btn.disabled = true;
+    form.classList.add("htmx-request");
+    try {
+      applyData(await load());
+      describeSnapshot();
+      render();
+    } catch (err) {
+      info.innerHTML = `<strong style="color:var(--error)">Refresh failed (${esc(err.message)}); showing the previous snapshot.</strong>`;
+    } finally {
+      btn.disabled = false;
+      form.classList.remove("htmx-request");
+    }
   }
 
   // ------------------------------------------------------------------ boot
 
   async function boot() {
     try {
-      const r = await fetch("./availability.json", { cache: "no-cache" });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      data = await r.json();
+      applyData(await load());
     } catch (err) {
       info.textContent = "";
       results.innerHTML = `<div class="error">Could not load availability.json (${esc(err.message)}).</div>`;
       return;
     }
-    defaults = { date_from: data.date_from, date_to: data.date_to, min_minutes: "120", indoor: "any" };
-    const clubs = data.providers.filter((p) => p.club).map((p) => p.club);
-    document.getElementById("clubs").innerHTML = clubs.map((c) =>
-      `<label class="chk"><input type="checkbox" name="club" value="${esc(c.key)}" checked> ${esc(c.name)}</label>`).join("");
-    form.elements.date_from.min = data.date_from;
-    form.elements.date_to.max = data.date_to;
     applyDefaults();
     restore();
     describeSnapshot();
     render();
     form.addEventListener("change", render);
     document.getElementById("reset").addEventListener("click", () => { applyDefaults(); render(); });
+    document.getElementById("refresh").addEventListener("click", refresh);
     setInterval(() => { describeSnapshot(); render(); }, 60000); // keep "past" cutoff and age label current
+    setInterval(refresh, RELOAD_MS);
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
   }
 
   boot();

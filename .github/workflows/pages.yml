@@ -2,7 +2,9 @@ name: Publish availability to GitHub Pages
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    # Off the quarter-hour marks: GitHub delays or drops scheduled runs that
+    # land on congested minutes (:00, :15, :30, :45).
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   push:
     branches: [main]

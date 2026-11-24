@@ -17,6 +17,7 @@ import argparse
 import asyncio
 import json
 import logging
+import os
 import shutil
 import sys
 from datetime import date, datetime, timedelta
@@ -70,11 +71,22 @@ def provider_json(r: ProviderResult, tz) -> dict[str, Any]:
     }
 
 
+def workflow_url() -> str | None:
+    """Link to the workflow that produced this snapshot (set automatically by GitHub Actions)."""
+    server, repo, ref = (os.environ.get(k) for k in ("GITHUB_SERVER_URL", "GITHUB_REPOSITORY", "GITHUB_WORKFLOW_REF"))
+    if not (server and repo and ref):
+        return None
+    # GITHUB_WORKFLOW_REF looks like "owner/repo/.github/workflows/pages.yml@refs/heads/main"
+    path = ref.split("@", 1)[0]
+    return f"{server}/{repo}/actions/workflows/{path.rsplit('/', 1)[-1]}"
+
+
 def snapshot_json(results: list[ProviderResult], criteria: Criteria, settings: Settings, now: datetime) -> dict[str, Any]:
     blocks = [block_json(b) for r in results for b in r.blocks]
     blocks.sort(key=lambda b: (b["day"], b["club"], b["court_name"], b["start_min"]))
     return {
         "generated_at": now.isoformat(),
+        "workflow_url": workflow_url(),
         "timezone": settings.timezone,
         "date_from": criteria.date_from.isoformat(),
         "date_to": criteria.date_to.isoformat(),

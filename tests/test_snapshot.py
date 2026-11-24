@@ -35,6 +35,18 @@ async def test_build_snapshot_shape_and_partial_failure():
     assert keys == sorted(keys)
 
 
+def test_workflow_url(monkeypatch):
+    from app.snapshot import workflow_url
+
+    for k in ("GITHUB_SERVER_URL", "GITHUB_REPOSITORY", "GITHUB_WORKFLOW_REF"):
+        monkeypatch.delenv(k, raising=False)
+    assert workflow_url() is None
+    monkeypatch.setenv("GITHUB_SERVER_URL", "https://github.com")
+    monkeypatch.setenv("GITHUB_REPOSITORY", "o/r")
+    monkeypatch.setenv("GITHUB_WORKFLOW_REF", "o/r/.github/workflows/pages.yml@refs/heads/main")
+    assert workflow_url() == "https://github.com/o/r/actions/workflows/pages.yml"
+
+
 def test_write_site(tmp_path):
     data = {"generated_at": "x", "timezone": "Europe/Zagreb", "date_from": "2026-01-01", "date_to": "2026-01-02", "providers": [], "blocks": []}
     out = tmp_path / "site"
