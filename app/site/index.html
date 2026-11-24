@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OmniTennis – Zagreb court availability</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+  <h1>OmniTennis</h1>
+  <p class="sub">Free tennis courts across Zagreb booking systems. <span id="snapshot-info">Loading snapshot…</span></p>
+</header>
+
+<main>
+  <form id="criteria">
+    <fieldset>
+      <legend>Dates</legend>
+      <label>From <input type="date" name="date_from" required></label>
+      <label>To <input type="date" name="date_to" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Slot</legend>
+      <label>Min duration
+        <select name="min_minutes">
+          <option value="60">1 h</option>
+          <option value="90">1.5 h</option>
+          <option value="120" selected>2 h</option>
+          <option value="150">2.5 h</option>
+          <option value="180">3 h</option>
+        </select>
+      </label>
+      <label>Indoor/outdoor
+        <select name="indoor">
+          <option value="any" selected>Any</option>
+          <option value="indoor">Indoor only</option>
+          <option value="outdoor">Outdoor only</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Clubs</legend>
+      <div class="clubs" id="clubs"></div>
+    </fieldset>
+
+    <div class="actions">
+      <button type="button" id="reset" title="Restore default criteria">Reset defaults</button>
+    </div>
+  </form>
+
+  <section id="results" aria-live="polite"></section>
+</main>
+
+<script src="./site.js"></script>
+</body>
+</html>

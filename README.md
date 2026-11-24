@@ -43,6 +43,30 @@ open http://127.0.0.1:8000.
 pytest
 ```
 
+## Static site (GitHub Pages)
+
+The booking backends block cross-origin browser requests, so the published site
+is a *snapshot*: `.github/workflows/pages.yml` runs every 15 minutes, fetches all
+providers with `python -m app.snapshot --out site` and deploys the folder with
+`actions/deploy-pages`. The page (`app/site/`) is plain HTML + JS that loads
+`availability.json` and applies the same criteria filtering as the live app on
+the client, so nothing is committed on each refresh.
+
+Live: https://imarsorama.github.io/omnitennis/
+
+Build locally:
+
+```powershell
+python -m app.snapshot --out .\site --horizon 14
+python -m http.server -d site 8000
+```
+
+Providers that need a login (`gradanski`) read their credentials from repository
+secrets (`OMNI_SPORTROUTER_USERNAME`, `OMNI_SPORTROUTER_PASSWORD`). The
+snapshot keeps all blocks of 30 minutes or more; the page filters down to the
+chosen minimum. Note that GitHub disables scheduled workflows after 60 days
+without repository activity; any push re-enables them.
+
 ## Supported booking systems
 
 | Key        | Club         | Platform                                  | Login |
