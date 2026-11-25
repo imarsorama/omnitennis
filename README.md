@@ -67,6 +67,20 @@ snapshot keeps all blocks of 30 minutes or more; the page filters down to the
 chosen minimum. Note that GitHub disables scheduled workflows after 60 days
 without repository activity; any push re-enables them.
 
+GitHub throttles frequent `schedule` triggers heavily (observed: about one run
+per several hours instead of every 15 minutes), so the cron is only a fallback.
+Reliable refreshes come from `workflow_dispatch`, which starts within seconds:
+
+```powershell
+gh workflow run pages.yml -R imarsorama/omnitennis
+```
+
+On the maintainer's PC a Windows scheduled task ("OmniTennis refresh") runs that
+command every 15 minutes while the user is logged on; its log is in
+`%LOCALAPPDATA%\omnitennis\refresh.log`. Any machine with an authenticated `gh`
+(or a fine-grained PAT with Actions write access hitting the
+`/actions/workflows/pages.yml/dispatches` endpoint) can do the same.
+
 ## Supported booking systems
 
 | Key        | Club         | Platform                                  | Login |
